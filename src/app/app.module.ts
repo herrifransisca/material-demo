@@ -5,7 +5,8 @@ import { NgModule } from '@angular/core';
 import {
   MdCheckboxModule,
   MdRadioModule,
-  MdSelectModule
+  MdSelectModule,
+  MdInputModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -20,7 +21,8 @@ import { AppComponent } from './app.component';
     FormsModule,
     MdCheckboxModule,
     MdRadioModule,
-    MdSelectModule
+    MdSelectModule,
+    MdInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
