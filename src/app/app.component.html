@@ -1,61 +1,12 @@
+<!-- traditional way -->
+<!-- <textarea rows="2"></textarea> -->
 
-<!-- input -->
+<!-- using md -->
 <!-- <md-input-container>
-  <input type="text" mdInput placeholder="Username">
+  <textarea mdInput rows="2"></textarea>
 </md-input-container> -->
 
-<!-- md-hint -->
-<!-- <md-input-container>
-  <input type="text" mdInput placeholder="Username">
-  <md-hint>Type a unique username.</md-hint>
-</md-input-container> -->
-
-<!-- md-hint -->
-<!-- <md-input-container>
-  <input type="text" mdInput placeholder="Username">
-  <md-hint>Type a unique username.</md-hint>
-</md-input-container> -->
-
-<!-- mdSuffix -->
-<!-- <md-input-container>
-  <input type="text" mdInput placeholder="Username">
-  <md-hint>Type a unique username.</md-hint>
-  <span class="mdSuffix">@domain.com</span>
-</md-input-container> -->
-
-<!-- mdPrefix -->
-<!-- <md-input-container>
-  <input type="text" mdInput placeholder="Username">
-  <md-hint>Type a unique username.</md-hint>
-  <span class="mdPrefix">admin.</span>
-  <span class="mdSuffix">@domain.com</span>
-</md-input-container> -->
-
-<!-- mdError -->
-<!-- <md-input-container>
-  <input
-    ngModel
-    name="username" 
-    type="text" mdInput placeholder="Username" required>
-  <md-hint>Type a unique username.</md-hint>
-  <span class="mdPrefix">admin.</span>
-  <span class="mdSuffix">@domain.com</span>
-  <md-error>
-    The username field is required.
-  </md-error>
-</md-input-container> -->
-
-<!-- mdError & ngIf -->
+<!-- auto size -->
 <md-input-container>
-  <input
-    ngModel
-    #username="ngModel"
-    name="username" 
-    type="text" mdInput placeholder="Username" required>
-  <md-hint>Type a unique username.</md-hint>
-  <span class="mdPrefix">admin.</span>
-  <span class="mdSuffix">@domain.com</span>
-  <md-error *ngIf="username.invalid && username.errors.required">
-    The username field is required.
-  </md-error>
+  <textarea mdInput mdTextareaAutosize rows="2"></textarea>
 </md-input-container>
