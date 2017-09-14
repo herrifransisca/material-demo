@@ -1,21 +1,20 @@
-<!-- <md-checkbox
-  [value]=""
-  checked="checked"
->Subscribe to newsletter</md-checkbox> -->
+<md-radio-group>
+  <md-radio-button value="1">Male</md-radio-button>
+  <md-radio-button value="0" checked="checked">Female</md-radio-button>
+</md-radio-group>
 
-<!-- <md-checkbox
-  [value]=""
-  [checked]="isChecked"
-  (change)="onChange($event)"
->Subscribe to newsletter</md-checkbox> -->
+<br>
+<br>
 
-<md-checkbox
-  #showDetails
-  [value]=""
-  [checked]="isChecked"
-  (change)="onChange($event)"
->Show details</md-checkbox>
+<md-radio-group>
+  <md-radio-button value="1">Male</md-radio-button>
+  <md-radio-button value="0" [checked]="isChecked">Female</md-radio-button>
+</md-radio-group>
 
-<div *ngIf="showDetails.checked">
-  <p>Some details...</p>
-</div>
+<br>
+<br>
+
+<md-radio-group value="0">
+  <md-radio-button value="1">Male</md-radio-button>
+  <md-radio-button value="0" [checked]="isChecked">Female</md-radio-button>
+</md-radio-group>
