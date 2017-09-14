@@ -1,7 +1,12 @@
+import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MdCheckboxModule, MdRadioModule } from '@angular/material';
+import {
+  MdCheckboxModule,
+  MdRadioModule,
+  MdSelectModule
+} from '@angular/material';
 
 import { AppComponent } from './app.component';
 
@@ -12,8 +17,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     MdCheckboxModule,
-    MdRadioModule
+    MdRadioModule,
+    MdSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
