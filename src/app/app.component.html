@@ -1,9 +1,35 @@
+<!-- md-chip -->
+<!-- <md-chip-list>
+  <md-chip>One</md-chip>
+  <md-chip>Two</md-chip>
+</md-chip-list> -->
 
-<button>Button 1</button>
-<button md-button>Button 2</button>
-<button md-raised-button>Button 3</button>
-<button color="primary" md-raised-button>Button 4 - primary</button>
-<button color="ascent" md-raised-button>Button 4 - ascent</button>
-<button color="warn" md-raised-button>Button 4 - warn</button>
-<button md-fab><md-icon>check</md-icon></button>
-<button color="primary" md-fab><md-icon>check</md-icon></button>
+<!-- selected -->
+<!-- <md-chip-list>
+  <md-chip selected="true">One</md-chip>
+  <md-chip>Two</md-chip>
+</md-chip-list> -->
+
+<!-- color -->
+<!-- <md-chip-list>
+  <md-chip selected="true" color="accent">One</md-chip>
+  <md-chip>Two</md-chip>
+</md-chip-list> -->
+
+<!-- dynamic, select multiple categories -->
+<!-- <md-chip-list>
+  <md-chip
+    (click)="category.selected = !category.selected"
+    [selected]="category.selected"
+    *ngFor="let category of categories"
+    >{{ category.name }}</md-chip>
+</md-chip-list> -->
+
+<!-- dynamic, select ONLY ONE CATEGORY -->
+<md-chip-list>
+  <md-chip
+    (click)="selectCategory(category)"
+    [selected]="category.selected"
+    *ngFor="let category of categories"
+    >{{ category.name }}</md-chip>
+</md-chip-list>
