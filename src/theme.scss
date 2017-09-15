@@ -14,17 +14,33 @@
 
 
 // using mixin, tuk solve problem diatas
-@mixin soft-border {
+// @mixin soft-border {
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+//   padding: 10px;
+// }
+
+// .box {
+//   @include soft-border();
+// }
+
+// .modern-box {
+//   @include soft-border();
+//   //...
+// }
+
+// using mixin, dengan pake argument, layaknya function
+@mixin soft-border($border-radius) {
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: $border-radius;
   padding: 10px;
 }
 
 .box {
-  @include soft-border();
+  @include soft-border(5px);
 }
 
 .modern-box {
-  @include soft-border();
+  @include soft-border(5px);
   //...
 }
