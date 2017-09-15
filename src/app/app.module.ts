@@ -6,7 +6,9 @@ import {
   MdCheckboxModule,
   MdRadioModule,
   MdSelectModule,
-  MdInputModule
+  MdInputModule,
+  MdDatepickerModule,
+  MdNativeDateModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -22,7 +24,9 @@ import { AppComponent } from './app.component';
     MdCheckboxModule,
     MdRadioModule,
     MdSelectModule,
-    MdInputModule
+    MdInputModule,
+    MdDatepickerModule,
+    MdNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

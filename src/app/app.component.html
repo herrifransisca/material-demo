@@ -1,12 +1,43 @@
-<!-- traditional way -->
-<!-- <textarea rows="2"></textarea> -->
+<!-- <md-form-field>
+  <input mdInput [mdDatepicker]="birthdate" placeholder="Choose a date">
+  <md-datepicker-toggle mdSuffix [for]="birthdate"></md-datepicker-toggle>
+  <md-datepicker #birthdate></md-datepicker>
+</md-form-field> -->
 
-<!-- using md -->
-<!-- <md-input-container>
-  <textarea mdInput rows="2"></textarea>
-</md-input-container> -->
+<!-- Touch UI mode -->
+<!-- The datepicker normally opens as a popup under the input. 
+  However this is not ideal for touch devices that don't have as much screen real estate 
+  and need bigger click targets. 
+  For this reason md-datepicker has a touchUi property that can be set to true 
+  in order to enable a more touch friendly UI where the calendar opens in a large dialog. -->
+<!-- <md-form-field>
+  <input mdInput [mdDatepicker]="birthdate" placeholder="Choose a date">
+  <md-datepicker-toggle mdSuffix [for]="birthdate"></md-datepicker-toggle>
+  <md-datepicker #birthdate touchUi="false"></md-datepicker>
+</md-form-field> -->
 
-<!-- auto size -->
-<md-input-container>
-  <textarea mdInput mdTextareaAutosize rows="2"></textarea>
-</md-input-container>
+<!-- using min, max -->
+<!-- it has an issue (not work properly) -->
+<!-- <md-form-field>
+  <input mdInput [min]="minDate" [max]="maxdate" [mdDatepicker]="birthdate" placeholder="Choose a date">
+  <md-datepicker-toggle mdSuffix [for]="birthdate"></md-datepicker-toggle>
+  <md-datepicker #birthdate touchUi="false"></md-datepicker>
+</md-form-field> -->
+
+
+<!-- no validation, for example: typing my name, no errors message occured -->
+
+<!-- open calendar when clicking "input field" -->
+<md-form-field>
+    <input 
+      (focus)="birthdate.open()"
+      mdInput 
+      [min]="minDate" 
+      [max]="maxdate" 
+      [mdDatepicker]="birthdate" 
+      placeholder="Choose a date"
+    >
+    <md-datepicker-toggle mdSuffix [for]="birthdate"></md-datepicker-toggle>
+    <md-datepicker #birthdate touchUi="false"></md-datepicker>
+  </md-form-field>
+  
