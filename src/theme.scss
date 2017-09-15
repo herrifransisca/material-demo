@@ -3,6 +3,7 @@
 
 @include mat-core();
 
+// define a custom theme
 $app-primary: mat-palette($mat-pink, 400);
 $app-accent: mat-palette($mat-light-blue, 500);
 $app-warn: mat-palette($mat-red);
@@ -10,3 +11,11 @@ $app-warn: mat-palette($mat-red);
 $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
 @include angular-material-theme($app-theme);
+
+// define a custom typography
+
+$app-typography: mat-typography-config(
+  $font-family: '"open sans", "Helvetica Neue", sans-serif'
+);
+
+@include angular-material-typography($app-typography);
