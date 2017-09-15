@@ -1,46 +1,12 @@
-// contoh kasus tuk pake mixin
-// .box {
-//   border: 1px solid #ccc;
-//   border-radius: 5px;
-//   padding: 10px;
-// }
 
-// .modern-box {
-//   border: 1px solid #ccc;
-//   border-radius: 5px;
-//   padding: 10px;
-//   //...
-// }
+@import "~@angular/material/_theming";
 
+@include mat-core();
 
-// using mixin, tuk solve problem diatas
-// @mixin soft-border {
-//   border: 1px solid #ccc;
-//   border-radius: 5px;
-//   padding: 10px;
-// }
+$app-primary: mat-palette($mat-pink, 400);
+$app-accent: mat-palette($mat-light-blue, 500);
+$app-warn: mat-palette($mat-red);
 
-// .box {
-//   @include soft-border();
-// }
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
-// .modern-box {
-//   @include soft-border();
-//   //...
-// }
-
-// using mixin, dengan pake argument, layaknya function
-@mixin soft-border($border-radius) {
-  border: 1px solid #ccc;
-  border-radius: $border-radius;
-  padding: 10px;
-}
-
-.box {
-  @include soft-border(5px);
-}
-
-.modern-box {
-  @include soft-border(5px);
-  //...
-}
+@include angular-material-theme($app-theme);
