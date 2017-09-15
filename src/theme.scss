@@ -15,7 +15,8 @@ $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 // define a custom typography
 
 $app-typography: mat-typography-config(
-  $font-family: '"open sans", "Helvetica Neue", sans-serif'
+  $font-family: '"open sans", "Helvetica Neue", sans-serif',
+  $headline: mat-typography-level(35px, 32px, 700)
 );
 
 @include angular-material-typography($app-typography);
