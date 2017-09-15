@@ -1,9 +1,17 @@
 
-<!-- determinate -->
+<!-- indeterminate -->
 <md-progress-spinner 
-  mode="determinate" 
-  [value]="progress"></md-progress-spinner>
+  *ngIf="isLoading"
+  mode="indeterminate">
+</md-progress-spinner>
 
-  
+
+<!-- CODE BELOW ALSO WORKS (USING MD-SPINNER) -->
+
+
 <!-- indeterminate -->
 <!-- The <md-spinner> component is an alias for <md-progress-spinner mode="indeterminate">. -->
+<!-- <md-spinner 
+  *ngIf="isLoading">
+</md-spinner>
+   -->
