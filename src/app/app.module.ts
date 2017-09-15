@@ -19,7 +19,7 @@ import {
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { EditCourseComponent } from './edit-course/edit-course.component';
+import { EditCourseComponent, DIALOG_DATA } from './edit-course/edit-course.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +47,9 @@ import { EditCourseComponent } from './edit-course/edit-course.component';
     MdTabsModule,
     MdDialogModule
   ],
-  providers: [],
+  providers: [
+    { provide: DIALOG_DATA, useValue: {} }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
