@@ -1,13 +1,30 @@
+// contoh kasus tuk pake mixin
+// .box {
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+//   padding: 10px;
+// }
 
-.box {
+// .modern-box {
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+//   padding: 10px;
+//   //...
+// }
+
+
+// using mixin, tuk solve problem diatas
+@mixin soft-border {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
 }
 
+.box {
+  @include soft-border();
+}
+
 .modern-box {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
+  @include soft-border();
   //...
 }
