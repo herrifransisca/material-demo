@@ -1,25 +1,11 @@
-import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {
-  MdCheckboxModule,
-  MdRadioModule,
-  MdSelectModule,
-  MdInputModule,
-  MdDatepickerModule,
-  MdNativeDateModule,
-  MdIconModule,
-  MdButtonModule,
-  MdChipsModule,
-  MdProgressSpinnerModule,
-  MdTooltipModule,
-  MdTabsModule,
-  MdDialogModule
-} from '@angular/material';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { EditCourseComponent } from './edit-course/edit-course.component';
+import { MdComponentsModule } from './md-components/md-components.module';
 
 @NgModule({
   declarations: [
@@ -33,19 +19,7 @@ import { EditCourseComponent } from './edit-course/edit-course.component';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    MdCheckboxModule,
-    MdRadioModule,
-    MdSelectModule,
-    MdInputModule,
-    MdDatepickerModule,
-    MdNativeDateModule,
-    MdIconModule,
-    MdButtonModule,
-    MdChipsModule,
-    MdProgressSpinnerModule,
-    MdTooltipModule,
-    MdTabsModule,
-    MdDialogModule
+    MdComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
