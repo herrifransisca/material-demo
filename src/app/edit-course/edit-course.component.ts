@@ -1,6 +1,5 @@
-import { Component, Inject, InjectionToken, OnInit } from '@angular/core';
-
-export const DIALOG_DATA = new InjectionToken('DIALOG_DATA');
+import { Component, Inject, OnInit } from '@angular/core';
+import { MD_DIALOG_DATA } from '@angular/material';
 
 @Component({
   selector: 'app-edit-course',
@@ -9,6 +8,6 @@ export const DIALOG_DATA = new InjectionToken('DIALOG_DATA');
 })
 export class EditCourseComponent {
 
-  constructor(@Inject(DIALOG_DATA) data: any) { console.log('Data', data); }
+  constructor(@Inject(MD_DIALOG_DATA) data: any) { console.log('Data', data); }
 
 }
