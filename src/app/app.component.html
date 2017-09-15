@@ -1,35 +1,9 @@
-<!-- md-chip -->
-<!-- <md-chip-list>
-  <md-chip>One</md-chip>
-  <md-chip>Two</md-chip>
-</md-chip-list> -->
 
-<!-- selected -->
-<!-- <md-chip-list>
-  <md-chip selected="true">One</md-chip>
-  <md-chip>Two</md-chip>
-</md-chip-list> -->
+<!-- determinate -->
+<md-progress-spinner 
+  mode="determinate" 
+  [value]="progress"></md-progress-spinner>
 
-<!-- color -->
-<!-- <md-chip-list>
-  <md-chip selected="true" color="accent">One</md-chip>
-  <md-chip>Two</md-chip>
-</md-chip-list> -->
-
-<!-- dynamic, select multiple categories -->
-<!-- <md-chip-list>
-  <md-chip
-    (click)="category.selected = !category.selected"
-    [selected]="category.selected"
-    *ngFor="let category of categories"
-    >{{ category.name }}</md-chip>
-</md-chip-list> -->
-
-<!-- dynamic, select ONLY ONE CATEGORY -->
-<md-chip-list>
-  <md-chip
-    (click)="selectCategory(category)"
-    [selected]="category.selected"
-    *ngFor="let category of categories"
-    >{{ category.name }}</md-chip>
-</md-chip-list>
+  
+<!-- indeterminate -->
+<!-- The <md-spinner> component is an alias for <md-progress-spinner mode="indeterminate">. -->

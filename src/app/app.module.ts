@@ -11,7 +11,8 @@ import {
   MdNativeDateModule,
   MdIconModule,
   MdButtonModule,
-  MdChipsModule
+  MdChipsModule,
+  MdProgressSpinnerModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -32,7 +33,8 @@ import { AppComponent } from './app.component';
     MdNativeDateModule,
     MdIconModule,
     MdButtonModule,
-    MdChipsModule
+    MdChipsModule,
+    MdProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
