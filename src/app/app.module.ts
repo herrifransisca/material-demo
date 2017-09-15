@@ -13,7 +13,8 @@ import {
   MdButtonModule,
   MdChipsModule,
   MdProgressSpinnerModule,
-  MdTooltipModule
+  MdTooltipModule,
+  MdTabsModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -36,7 +37,8 @@ import { AppComponent } from './app.component';
     MdButtonModule,
     MdChipsModule,
     MdProgressSpinnerModule,
-    MdTooltipModule
+    MdTooltipModule,
+    MdTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
