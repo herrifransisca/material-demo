@@ -9,7 +9,8 @@ import {
   MdInputModule,
   MdDatepickerModule,
   MdNativeDateModule,
-  MdIconModule
+  MdIconModule,
+  MdButtonModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -28,7 +29,8 @@ import { AppComponent } from './app.component';
     MdInputModule,
     MdDatepickerModule,
     MdNativeDateModule,
-    MdIconModule
+    MdIconModule,
+    MdButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
