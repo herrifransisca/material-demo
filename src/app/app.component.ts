@@ -1,6 +1,6 @@
+import { EditCourseComponent } from './edit-course/edit-course.component';
 import { Component } from '@angular/core';
-import 'rxjs/add/observable/timer';
-import { Observable } from 'rxjs/Observable';
+import { MdDialog } from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +8,11 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isLoading = false;
+  constructor(private dialog: MdDialog) {}
 
-  constructor() {
-    this.isLoading = true;
-    this.getCourses()
-      .subscribe(x => this.isLoading = false);
-  }
-
-  // it should not be here,
-  // instead of in the service. but it doesn't matter for this demo
-  getCourses() {
-    return Observable.timer(2000);
+  openDialog() {
+    this.dialog.open(EditCourseComponent)
+      .afterClosed()
+      .subscribe(result => console.log(result));
   }
 }

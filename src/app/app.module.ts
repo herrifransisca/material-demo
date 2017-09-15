@@ -14,14 +14,20 @@ import {
   MdChipsModule,
   MdProgressSpinnerModule,
   MdTooltipModule,
-  MdTabsModule
+  MdTabsModule,
+  MdDialogModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { EditCourseComponent } from './edit-course/edit-course.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EditCourseComponent
+  ],
+  entryComponents: [
+    EditCourseComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,8 @@ import { AppComponent } from './app.component';
     MdChipsModule,
     MdProgressSpinnerModule,
     MdTooltipModule,
-    MdTabsModule
+    MdTabsModule,
+    MdDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
